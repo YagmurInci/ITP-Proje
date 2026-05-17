@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg-light: rgb(244, 195, 247);       /* Açık gri arka plan */
+    --white: #ffffff;           /* Beyaz */
+    --primary: #2563eb;        /* Standart mavi */
+    --primary-hover: #1d4ed8;  /* Koyu mavi */
+    --text-main: black;      /* Koyu gri metin */
+    --text-muted: #6b7280;     /* Gri metin */
+    --border: #4271b7;         /* Standart kenarlık rengi */
+    --sidebar-width: 240px;      /* Kenar çubuğu genişliği */
+}
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    line-height: 1.6; 
+}
+
+
+.flex {display: flex; }
+
+.flex-col {flex-direction: column; }
+
+.items-center {align-items: center; }
+
+.justify-between {justify-content: space-between; }
+
+.gap-2 {gap: 16px; }
+.gap-3 {gap: 24px; }
+.gap-4 {gap: 32px; }
+
+.app-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px; /* Hafif yuvarlatılmış köşeler */
+    cursor: pointer; /* Fare imlecini el yapar */
+    text-decoration: none; /* Linkler için */
+    text-align: center; 
+    font-weight: 500; /* Orta kalınlık */
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover); 
+}
+
+
+input, textarea {
+    padding: 10px;
+    border: 2px solid var(--border);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+.nav-brand{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 30px;
+    display:flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sidebar {
+    width: var(--sidebar-width);
+    min-width: var(--sidebar-width);
+    max-width: var(--sidebar-width);
+    background-color: var(--white);
+    padding: 24px;
+    border-right: 2px solid var(--border);
+    position: fixed; /* Kenar çubuğunu sabitle */
+    height: 100vh; /* Kenar çubuğunu tam ekran yüksekliğinde yap */
+}
+
+.main-content {
+    margin-left: var(--sidebar-width); /* Kenar çubuğu genişliği kadar boşluk bırak */
+    padding: 32px;
+    flex: 1; /* Ana içeriğin kalan alanı kaplamasını sağlar */
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.nav-link {
+    color: var(--text-main);
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-weight: 500; /* Orta kalınlık */
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-link span {
+    display: inline-block; /* İkon ve metni aynı hizada tutmak için */
+    font-size: 18px;
+    width: 24px; /* İkonun genişliği */
+    text-align: center; /* İkonu ortalamak için */
+}
+
+
+.nav-link:hover,.nav-link.active {
+    background-color: var(--bg-light);
+    color: var(--primary);
+}
+
+

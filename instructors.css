@@ -1,0 +1,67 @@
+@import "common.css";
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Otomatik doldurma, minimum 350px genişlik ve kalan alanı eşit şekilde dağıtır */
+    gap: 30px;
+    padding: 20px;
+}
+
+.card {
+    background: var(--white);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 20px;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ddd;
+}
+
+.tag {
+    font-size: 14px;
+    display: inline-block; 
+    padding: 4px 8px;
+    background: #f3f4f6;
+    color: #4b5563;
+    border-radius: 4px;
+    width: fit-content; /* İçeriğe göre genişlik */
+}
+
+
+.topbar {
+    display: flex;
+    justify-content: space-between; 
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--border); 
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.search-bar {
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid var(--border);
+    border-radius: 4px;
+    padding: 8px 12px;
+    width: 300px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0; /* Arama çubuğunun içindeki inputun paddingini kaldır */
+}

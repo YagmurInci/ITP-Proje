@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPro | TümKurslar</title>
+    <link rel="stylesheet" href="courses.css">
+</head>
+
+<body>
+    <!-- app-container: Sidebar ve İçerik Alanını kapsayan ana kutu -->
+    <div class="app-container">
+        <!-- Sidebar: Navigasyon menüsü -->
+        <aside class="sidebar">
+            <!-- Marka logosu ve ismi -->
+            <div class="nav-brand">
+                <img src="assets/EduProLogo.png" alt="Logo" style="width: 40px; height: 40px;"> EduPro
+            </div>
+
+            <!-- Navigasyon menü listesi -->
+            <nav class="nav-menu">
+                <!-- Sayfa linkleri ve ikonları -->
+                <a href="home.html" class="nav-link"><span>🏠</span> Ana Sayfa</a>
+                <a href="courses.html" class="nav-link active"><span>📚</span> Tüm Kurslar</a>
+                <a href="my-courses.html" class="nav-link"><span>🎯</span> Kurslarım</a>
+                <a href="instructors.html" class="nav-link"><span>👨‍🏫</span> Eğitmenler</a>
+                <a href="profile.html" class="nav-link"><span>👤</span> Profil</a>
+            </nav>
+
+            <!-- Çıkış yapma linki (alt kısımda) -->
+            <div style="margin-top: auto;">
+                <a href="index.html" class="nav-link" style="color: red;"><span>🚪</span> Çıkış Yap</a>
+            </div>
+        </aside>
+                
+
+        <!-- main-content: Sağdaki kurs listesi alanı -->
+        <main class="main-content">
+            <!-- topbar: Arama çubuğu ve sayfa başlığı -->
+            <header class="topbar">
+                <div class="search-bar">
+                    <span>🔍</span>
+                    <input type="text" placeholder="Kurslarda ara...">
+                </div>
+                <h1>Tüm Kurslar</h1>
+            </header>
+
+            <!-- İçerik bölümü -->
+            <section class="content-area">
+                <!-- Kategori filtreleme butonları -->
+                <div class="flex gap-2" style="margin-bottom: 2rem;">
+                    <!-- 'Tümü' seçeneği (aktif) -->
+                    <button class="btn btn-primary" style="padding: 0.5rem 1.2rem; border-radius: 20px;">Tümü</button>
+                    <!-- 'Yazılım' kategorisi -->
+                    <button class="btn"
+                        style="background: var(--glass); color: rgb(134, 118, 118); padding: 0.5rem 1.2rem; border-radius: 20px;">Yazılım</button>
+                    <!-- 'Tasarım' kategorisi -->
+                    <button class="btn"
+                        style="background: var(--glass); color:  rgb(134, 118, 118); padding: 0.5rem 1.2rem; border-radius: 20px;">Tasarım</button>
+                    <!-- 'İşletme' kategorisi -->
+                    <button class="btn"
+                        style="background: var(--glass); color:  rgb(134, 118, 118); padding: 0.5rem 1.2rem; border-radius: 20px;">İşletme</button>
+                </div>
+
+                <!-- grid-container: Kurs kartlarını düzenli bir şekilde dizen ızgara yapısı -->
+                <div class="grid-container">
+
+                    <!-- 1. kurs veri bilimi -->
+                    <div class="card">
+                        <img src="assets/datascience.png" alt="course" class="course-img">
+                        <div class="tag">Veri Bilimi</div>
+                        <h3>Python ile Veri Analizi</h3>
+                        <p style="color: var(--text-muted); font-size: 14px;">Pandas, Numpy ve Matplotlib ile veri
+                            görselleştirme.</p>
+                        <!-- Fiyat ve kayıt butonu -->
+                        <div class="flex justify-between items-center">
+                            <span style="font-weight: 700; color: var(--primary);">₺199</span>
+                            <a href="#" class="btn-primary btn" style="padding: 8px 16px; font-size: 14px;">Kayıt Ol</a>
+                        </div>
+                    </div>
+
+                    <!-- 2. Kurs: Mobil Geliştirme -->
+                    <div class="card">
+                        <img src="assets/mobile.png" alt="course" class="course-img">
+                        <!-- Kategori etiketi -->
+                        <div class="tag">Mobil</div>
+                        <!-- Kurs başlığı -->
+                        <h3>Flutter ile Mobil Uygulama</h3>
+                        <!-- Kurs kısa açıklaması -->
+                        <p style="color: var(--text-muted); font-size: 14px; ">iOS ve Android
+                            uygulamaları geliştirin.</p>
+                        <!-- Fiyat ve kayıt butonu -->
+                        <div class="flex justify-between items-center" >
+                            <span style="font-weight: 700; color: var(--primary);">Free</span>
+                            <a href="#" class="btn-primary btn" style="padding: 8px 16px; font-size: 14px;">Kayıt Ol</a>
+                        </div>
+                    </div>
+
+                    <!-- 3. Kurs: Pazarlama -->
+                    <div class="card">
+                        <img src="assets/uiux.png" alt="course" class="course-img">
+                        <!-- Kategori etiketi -->
+                        <div class="tag">Pazarlama</div>
+                        <!-- Kurs başlığı -->
+                        <h3>Dijital Pazarlama Uzmanlığı</h3>
+                        <!-- Kurs kısa açıklaması -->
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">SEO, SEM ve Sosyal Medya stratejileri.
+                        </p>
+                        <!-- Fiyat ve kayıt butonu -->
+                        <div class="flex justify-between items-center">
+                            <span style="font-weight: 700; color: var(--primary);">599 TL</span>
+                            <a href="#" class="btn btn-primary" style="padding: 8px 16px; font-size: 14px;">Kayıt
+                                Ol</a>
+                        </div>
+                    </div>
+
+                    <!-- 4. Kurs: Oyun Geliştirme -->
+                    <div class="card">
+                        <!-- Kurs kapağı -->
+                        <img src="assets/game.png" alt="Course" class="course-img">
+                        <!-- Kategori etiketi -->
+                        <div class="tag">Oyun</div>
+                        <!-- Kurs başlığı -->
+                        <h3>Unity ile 2D Oyun Geliştirme</h3>
+                        <!-- Kurs kısa açıklaması -->
+                        <p style="font-size: 14px; color: var(--text-muted);">C# ve Unity kullanarak ilk oyununuzu
+                            yapın.</p>
+                        <!-- Fiyat ve kayıt butonu -->
+                        <div class="flex justify-between items-center">
+                            <span style="font-weight: 700; color: var(--primary);">Ücretsiz</span>
+                            <a href="#" class="btn btn-primary" style="padding: 8px 16px; font-size: 14px;">Kayıt
+                                Ol</a>
+                        </div>
+                    </div>
+
+
+                    <!-- 5. Kurs: Makine Öğrenmesi -->
+                    <div class="card">
+                        <img src="assets/course1.png" alt="course" class="course-img">
+                        <div class="tag">Yapay Zeka</div>
+                        <h3>Makine Öğrenmesine Giriş</h3>
+                        <p style="font-size: 14px; color: var(--text-muted);">Scikit-learn ile makine öğrenmesi algoritmaları.</p>
+                        <div class="flex justify-between items-center ">
+                            <span style="font-weight: 700; color: var(--primary);">₺149</span>
+                            <a href="#" class="btn-primary btn" style="padding: 8px 16px; font-size: 14px;">Kayıt Ol</a>
+                        </div>
+                    </div>
+
+                    <!-- 6. Kurs: Pazarlama -->
+                    <div class="card">
+                        <img src="assets/course2.jpg" alt="course" class="course-img">
+                        <div class="tag">Pazarlama</div>
+                        <h3>Pazarlama Stratejileri</h3>
+                        <p style="font-size: 14px; color: var(--text-muted);">Etkili pazarlama stratejileri ve uygulamaları.</p>
+                        <div class="flex justify-between items-center ">
+                            <span style="font-weight: 700; color: var(--primary);">₺200</span>
+                            <a href="#" class="btn-primary btn" style="padding: 8px 16px; font-size: 14px;">Kayıt Ol</a>
+                        </div>
+                    </div>
+
+
+                    <!-- 7. Kurs: Siber Güvenlik -->
+                    <div class="card">
+                        <img src="assets/cybersecurity.png" alt="course" class="course-img">
+                        <div class="tag">Yazılım</div>
+                        <h3>Siber Güvenlik Temelleri</h3>
+                        <p style="font-size: 14px; color: var(--text-muted);">Siber tehditler ve koruma stratejileri.</p>
+                        <div class="flex justify-between items-center ">
+                            <span style="font-weight: 700; color: var(--primary);">₺100</span>
+                            <a href="#" class="btn-primary btn" style="padding: 8px 16px; font-size: 14px;">Kayıt Ol</a>
+                        </div>
+                    </div>
+
+                    <!-- 8. Kurs: web Tasarım -->
+                    <div class="card">
+                        <img src="assets/web_dev.png" alt="course" class="course-img">
+                        <div class="tag">Tasarım</div>
+                        <h3>web Tasarım Temelleri</h3>
+                        <p style="font-size: 14px; color: var(--text-muted);">HTML, CSS ve JavaScript ile modern web siteleri oluşturun.</p>
+                        <div class="flex justify-between items-center ">
+                            <span style="font-weight: 700; color: var(--primary);">₺150</span>
+                            <a href="#" class="btn-primary btn" style="padding: 8px 16px; font-size: 14px;">Kayıt Ol</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+    </div>
+</body>
+</html>

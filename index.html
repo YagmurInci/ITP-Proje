@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPro | Giriş Yap</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+        <div class="auth-wrapper">
+            <div class="auth-card">
+                <div class="auth-header">
+
+                    <div class="nav-brand">
+                        <span style="font-size: 24px;">⚡</span>EduPro
+                    </div>
+
+                    <!--Ana karşılama mesajı-->
+                    <h2>EduPro'ya Hoş Geldiniz</h2>
+                    <p>Giriş yaparak eğitim dünyasına adım atın!</p>
+                </div>
+            
+                <form action="home.html" class="flex flex-col gap-3">
+                    <div class="form-group">
+                        <label>E-posta Adresi</label>
+                        <input type="email"  placeholder="ornek@edu.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Şifre</label>
+                        <input type="password" placeholder=".............." required>
+                    </div>
+                    <!--beni hatırla ve şifremi unuttum-->
+                    <div class="flex items-center justify-between" style="font-size: 14px;">
+                        
+                        <!--checkbox (beni hatırla)-->
+                        <label class="flex items-center gap-1 cursor-pointer">
+                            <input type="checkbox"  style="width: auto; padding: 0%;"> Beni Hatırla
+                        </label>
+
+                        <!--şifremi unuttum linki-->
+                        <a href="#" style="color: var(--primary); text-decoration: none;">Şifremi Unuttum</a>
+                    </div>
+
+                    <!--giriş yap butonu-->
+                    <button type="submit" class="btn-primary btn">Giriş Yap</button>
+                </form>
+                <!--kayıt olmaya yönlendiren mesaj-->
+                <div class="flex justify-center gap-1" style="font-size: 14px; color: var(--text-muted);">
+                    Hesabınız yok mu? <a href="#" style="color: var(--primary); text-decoration: none; font-weight: 600; ">Kayıt Ol</a>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

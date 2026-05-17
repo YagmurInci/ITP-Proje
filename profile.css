@@ -1,0 +1,76 @@
+@import "common.css";
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--white);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: 2px solid var(--border);
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ddd;
+    border: 2px solid var(--border);
+}
+
+.stat-box {
+    background: var(--white);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Eşit genişlik */
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between; 
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--border); 
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.card {
+    background: var(--white);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid var(--border);
+    border-radius: 4px;
+    padding: 8px 12px;
+    width: 300px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none; /* Odak halkasını kaldır */
+    width: 100%;
+    padding: 0px;
+}

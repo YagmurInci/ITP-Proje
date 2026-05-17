@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPro | Profilim</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+
+<body>
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="nav-brand">
+                <img src="assets/EduProLogo.png" alt="Logo" style="width: 40px; height: 40px;"> EduPro
+            </div>
+            <nav class="nav-menu">
+                <a href="home.html" class="nav-link"><span>🏠</span> Ana Sayfa</a>
+                <a href="courses.html" class="nav-link"><span>📚</span> Tüm Kurslar</a>
+                <a href="my-courses.html" class="nav-link"><span>🎯</span> Kurslarım</a>
+                <a href="instructors.html" class="nav-link"><span>👨‍🏫</span> Eğitmenler</a>
+                <a href="profile.html" class="nav-link active"><span>👤</span> Profil</a>
+            </nav>
+
+            <div style="margin-top: auto;">
+                <a href="index.html" class="nav-link" style="color: #ef4444;"><span>🚪</span> Çıkış Yap</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <!-- topbar: Arama çubuğu ve sayfa başlığı -->
+            <header class="topbar">
+                <div class="search-bar">
+                    <span>🔍</span>
+                    <input type="text" placeholder="profilinde ara...">
+                </div>
+                <h1>Profil Ayarları</h1>
+            </header>
+
+            <!-- Profil bilgileri bölümü -->
+            <section class="content-area">
+                <div class="profile-header">
+                    <img src="https://ui-avatars.com/api/?name=Yagmur+Inci&background=ec4899&color=fff" alt="avatar" class="profile-avatar">
+                    <!-- Kullanıcı temel bilgileri -->
+                    <div>
+                        <h2>Yağmur İnci</h2>
+                        <p style="color: var(--text-muted);">Üyelik Tarihi: Mayıs 2026</p>
+                        <!-- Profil fotoğrafını değiştirme aksiyonu -->
+                        <button type="submit" class="btn btn-primary"
+                            style="padding: 14px 24px; margin-top: 16px;">Fotoğrafı
+                            Değiştir</button>
+                    </div>
+                </div>
+
+                <!-- Kişisel bilgiler formu kartı -->
+                <div class="card" style="max-width: 800px;">
+                    <!-- Kart başlığı -->
+                     <h3 style="margin-bottom: 24px;">Kişisel Bilgiler</h3>
+                    <!-- Düzenleme formu -->
+                    <form class="flex flex-col gap-3">
+                        <!-- İsim ve Soyisim yan yana (Flex) -->
+                        <div class="flex gap-2">
+                            <!-- İsim alanı -->
+                            <div class="form-group" style="flex: 1;">
+                                <label>Ad</label>
+                                <input type="text" value="Yağmur">
+                            </div>
+                            <!-- Soyisim alanı -->
+                            <div class="form-group" style="flex: 1;">
+                                <label>Soyad</label>
+                                <input type="text" value="İnci">
+                            </div>
+                        </div>
+                        <!-- E-posta alanı -->
+                        <div class="form-group">
+                            <label>E-posta</label>
+                            <input type="email" value="yagmur@example.com">
+                        </div>
+                        <!-- Biyografi alanı (Textarea) -->
+                        <div class="form-group">
+                            <label>Biyografi</label>
+                            <textarea
+                                style="background: rgba(255, 255, 255, 0.05); border: 2px solid var(--glass-border); padding: 16px; border-radius: 12px; color: rgb(71, 57, 57); font-family: inherit; resize: vertical; min-height: 100px;">Yeni şeyler öğrenmeyi seven bir yazılım meraklısı.</textarea>
+                        </div>
+
+                        <!-- Kaydetme butonu -->
+                        <div style="margin-top: 16px;">
+                            <button type="submit" class="btn btn-primary" style="padding: 14px 24px;">Değişiklikleri
+                                Kaydet</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

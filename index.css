@@ -1,0 +1,19 @@
+@import "common.css";
+
+.auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-light);
+}
+
+.auth-card{
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    width: 100%;
+    max-width: 400px; /* Maksimum genişlik */
+    border: 2px solid var(--border); /* İnce bir kenarlık */
+}
