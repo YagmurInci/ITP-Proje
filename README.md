@@ -49,7 +49,7 @@ Proje, en yüksek görsel kaliteyi ve kullanıcı deneyimini sağlamak için sı
 - **Styling (CSS):** Vanilla CSS3 kullanılarak oluşturulan modern tasarım sistemi.
   - **Glassmorphism:** Arka planlarda modern buzlu cam efekti (`backdrop-filter: blur`, yarı şeffaf sınırlar).
   - **Renk Paleti:** Uyumlu koyu/açık tonlar, modern gradyanlar ve marka kimliğini yansıtan vurgu renkleri.
-  - **Duyarlı Tasarım (Responsive):** CSS Flexbox ve Grid sistemleri ile mobil, tablet ve masaüstü cihazlarla tam uyum.
+  - **Duyarlı Tasarım (Responsive):** CSS Flexbox yapısı ile mobil, tablet ve masaüstü cihazlarla tam uyum.
   - **Mikro Etkileşimler:** Butonlarda ve kartlarda yumuşak geçiş efektleri (hover, transition).
 
 ---

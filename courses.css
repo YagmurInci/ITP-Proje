@@ -1,8 +1,8 @@
 @import "common.css";
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Otomatik doldurma, minimum 350px genişlik ve kalan alanı eşit şekilde dağıtır */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 20px;
 }
@@ -17,6 +17,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 12px;
+    flex: 1 1 350px; /* Minimum 350px genişlik ve esneklik sağlar */
 }
 
 
